@@ -65,10 +65,6 @@ function drawTable (data) {
   .attr('class', 'time')
   .html(function(m) { return m.cs_time; });
 
-  // tr.append('td')
-  // .attr('class', 'where')
-  // .html(function(m) { return m.cs_where; });
-
   tr.append('td')
   .attr('class', 'sched_type')
   .html(function(m) { return m.cs_sched_type; });
@@ -88,16 +84,9 @@ function drawTable (data) {
   tr.append('td')
   .attr('class', 'credits')
   .html(function(m) { return m.credits; });
-
-  // tr.append('td')
-  // .attr('class', 'type_href')
-  // .html(function(m) { return '<a href="https://alvin.newschool.edu/prbn/bwckschd.p_disp_detail_sched?term_in=201530&crn_in=' + m.class_number + '">Link</a>';});
-
-
 }
 
 function filter(filterBy, query) {
-  // console.log(filterBy + "," + query);
   crn.filterAll();
   var dimension = window[filterBy];
   if(query === "ALL"){
@@ -105,19 +94,9 @@ function filter(filterBy, query) {
     dataset = programCode.bottom(Infinity);
   } else {
     dataset = dimension.filter(query).bottom(Infinity);
-    // dataset = programCode.filterAll().bottom(Infinity);
-    // dataset = titleOnly.filterAll().bottom(Infinity);
   }
   redrawTable(dataset);
 }
-
-// function filterByProgram() {
-//   checkCheckboxes();
-//   dataset = programCode.filterFunction(function(d) {
-//     return "PSAM" == d || "PGUD" == d;
-//   }).bottom(Infinity);
-//   redrawTable(dataset);
-// }
 
 function redrawTable(input) {
   drawTable(input);
@@ -139,7 +118,6 @@ function populateSidebar(selectedCrn) {
   $("#sb-descript").text(description);
   $("#sb-link").attr('href', 'https://alvin.newschool.edu/prbn/bwckschd.p_disp_detail_sched?term_in=201530&crn_in=' + thisClass[0].crn);
   $("#sb-link").attr('target', '_blank');
-  // $(document).prop('title', 'b-c-f-' + thisClass[0].title_text);
   $("#sbar-wrap").show();
 
   reset(thisClass[0].crn, "https://betterclassfinder.herokuapp.com/#!" + thisClass[0].crn, thisClass[0].title_text);
@@ -147,10 +125,6 @@ function populateSidebar(selectedCrn) {
 
 $(window).on('hashchange', function() {
   var url = window.location.href;
-  // if(url.search("#") > -1) {
-  //   var selectedCrn = url.split("#")[1];
-  //   populateSidebar("#" + selectedCrn);
-  // }
   if(url.search("#!") > -1) {
     var selectedCrn = url.split("#!")[1];
     populateSidebar("#" + selectedCrn);

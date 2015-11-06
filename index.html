@@ -53,17 +53,12 @@
       <p>Please be nice and play fair with comments. Post only what's relevant about this class. No offensive or hateful comments. You are solely responsible for your comment's content</p>
       <div id="disqus_thread"></div>
       <script>
-      /**
-      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-      */
-
       var disqus_config = function () {
         this.page.url = 'https://betterclassfinder.herokuapp.com/';  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = 'main'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
 
-      (function() {  // DON'T EDIT BELOW THIS LINE
+      (function() {
       var d = document, s = d.createElement('script');
 
       s.src = '//betterclassfinder.disqus.com/embed.js';
@@ -105,240 +100,15 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li> -->
-
-        <li>
-<!-- <SELECT NAME="sel_subj" SIZE="10" MULTIPLE ID="subj_id"> -->
-
-<!-- <li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filter by program <span class="caret"></span></a>
-<ul class="dropdown-menu scrollable-menu">
-
-<li><input type="checkbox" class="program-check" onClick="toggle(this)" />Check All<br/></li>
-
-<li><input type="checkbox" class="program-check" VALUE="APAM">APAM Paris Art, Media & Tech</li>
-<li><input type="checkbox" class="program-check" VALUE="APDM">APDM Paris Design & Mgmt</li>
-<li><input type="checkbox" class="program-check" VALUE="APDR">APDR Paris Design Strategies</li>
-<li><input type="checkbox" class="program-check" VALUE="APDS">APDS Paris Design Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="APFD">APFD Paris Fashion Design</li>
-<li><input type="checkbox" class="program-check" VALUE="APFR">APFR Paris French Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="APFS">APFS Paris Fashion Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="APFY">APFY Paris First Year</li>
-<li><input type="checkbox" class="program-check" VALUE="APHT">APHT Paris Art/Design Hist/Thr</li>
-<li><input type="checkbox" class="program-check" VALUE="APMT">APMT Paris Mathematics</li>
-<li><input type="checkbox" class="program-check" VALUE="APTE">APTE Paris Design & Technology</li>
-<li><input type="checkbox" class="program-check" VALUE="APUL">APUL Paris Lectures</li>
-<li><input type="checkbox" class="program-check" VALUE="CAML">CAML Major Lessons</li>
-<li><input type="checkbox" class="program-check" VALUE="CAOV">CAOV Opera Vocal</li>
-<li><input type="checkbox" class="program-check" VALUE="CAPR">CAPR Performance Classes</li>
-<li><input type="checkbox" class="program-check" VALUE="CATM">CATM Techniques of Music</li>
-<li><input type="checkbox" class="program-check" VALUE="CBHM">CBHM Humanities</li>
-<li><input type="checkbox" class="program-check" VALUE="CBLN">CBLN Language and Diction</li>
-<li><input type="checkbox" class="program-check" VALUE="CBMH">CBMH Music History and Lit</li>
-<li><input type="checkbox" class="program-check" VALUE="CBPD">CBPD Pedagogy</li>
-<li><input type="checkbox" class="program-check" VALUE="CCSM">CCSM Graduate Seminars</li>
-<li><input type="checkbox" class="program-check" VALUE="GANT">GANT Anthropology</li>
-<li><input type="checkbox" class="program-check" VALUE="GECO">GECO Economics</li>
-<li><input type="checkbox" class="program-check" VALUE="GEQV">GEQV GF Equivalency</li>
-<li><input type="checkbox" class="program-check" VALUE="GHIS">GHIS Historical Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="GIHR">GIHR Harm Reduction</li>
-<li><input type="checkbox" class="program-check" VALUE="GLIB">GLIB Liberal Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="GPHI">GPHI Philosophy</li>
-<li><input type="checkbox" class="program-check" VALUE="GPOL">GPOL Politics</li>
-<li><input type="checkbox" class="program-check" VALUE="GPSY">GPSY General Psychology</li>
-<li><input type="checkbox" class="program-check" VALUE="GPUB">GPUB Creative Publishing</li>
-<li><input type="checkbox" class="program-check" VALUE="GSOC">GSOC Sociology</li>
-<li><input type="checkbox" class="program-check" VALUE="JAZZ">JAZZ Jazz</li>
-<li><input type="checkbox" class="program-check" VALUE="JCTH">JCTH Jazz Composition/Theory</li>
-<li><input type="checkbox" class="program-check" VALUE="JLES">JLES Jazz Private Lessons</li>
-<li><input type="checkbox" class="program-check" VALUE="JMUH">JMUH Jazz Music History</li>
-<li><input type="checkbox" class="program-check" VALUE="JPER">JPER Jazz Performance</li>
-<li><input type="checkbox" class="program-check" VALUE="JTEB">JTEB Jazz Technology/Business</li>
-<li><input type="checkbox" class="program-check" VALUE="JVOC">JVOC Jazz Vocal Classes</li>
-<li><input type="checkbox" class="program-check" VALUE="JZLA">JZLA Jazz Liberal Arts</li>
-<li><input type="checkbox" class="program-check" VALUE="LANT">LANT Anthropology</li>
-<li><input type="checkbox" class="program-check" VALUE="LCST">LCST Culture and Media</li>
-<li><input type="checkbox" class="program-check" VALUE="LDAN">LDAN Dance</li>
-<li><input type="checkbox" class="program-check" VALUE="LECO">LECO Economics</li>
-<li><input type="checkbox" class="program-check" VALUE="LFYW">LFYW First Yr Writing Prog</li>
-<li><input type="checkbox" class="program-check" VALUE="LHIS">LHIS History</li>
-<li><input type="checkbox" class="program-check" VALUE="LINA">LINA Integrated Arts</li>
-<li><input type="checkbox" class="program-check" VALUE="LLSJ">LLSJ Literary Studies,Journali</li>
-<li><input type="checkbox" class="program-check" VALUE="LLSL">LLSL Literary Studies; Literat</li>
-<li><input type="checkbox" class="program-check" VALUE="LLST">LLST Literary Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="LLSW">LLSW Literary Studies; Writing</li>
-<li><input type="checkbox" class="program-check" VALUE="LMOB">LMOB Lang Mobility</li>
-<li><input type="checkbox" class="program-check" VALUE="LMTH">LMTH Mathematics</li>
-<li><input type="checkbox" class="program-check" VALUE="LMUS">LMUS Music</li>
-<li><input type="checkbox" class="program-check" VALUE="LNGC">LNGC Lang College</li>
-<li><input type="checkbox" class="program-check" VALUE="LPHI">LPHI Philosophy</li>
-<li><input type="checkbox" class="program-check" VALUE="LPOL">LPOL Political Science</li>
-<li><input type="checkbox" class="program-check" VALUE="LPSY">LPSY Psychology</li>
-<li><input type="checkbox" class="program-check" VALUE="LREL">LREL Religion</li>
-<li><input type="checkbox" class="program-check" VALUE="LSCI">LSCI Natural Sciences</li>
-<li><input type="checkbox" class="program-check" VALUE="LSOC">LSOC Sociology</li>
-<li><input type="checkbox" class="program-check" VALUE="LTHR">LTHR Theater</li>
-<li><input type="checkbox" class="program-check" VALUE="LVIS">LVIS Visual Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="NANT">NANT Anthro & Archaeology</li>
-<li><input type="checkbox" class="program-check" VALUE="NARB">NARB Arabic</li>
-<li><input type="checkbox" class="program-check" VALUE="NARH">NARH Art and Architecture</li>
-<li><input type="checkbox" class="program-check" VALUE="NCHM">NCHM Chinese Mandarin</li>
-<li><input type="checkbox" class="program-check" VALUE="NCOM">NCOM Communication</li>
-<li><input type="checkbox" class="program-check" VALUE="NCST">NCST Cultural Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="NDOC">NDOC Documentary Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="NECO">NECO Economics</li>
-<li><input type="checkbox" class="program-check" VALUE="NELP">NELP English Second Lang Parsn</li>
-<li><input type="checkbox" class="program-check" VALUE="NELT">NELT Engl Language Teaching</li>
-<li><input type="checkbox" class="program-check" VALUE="NEPS">NEPS Env Pol and Sust Mgmt</li>
-<li><input type="checkbox" class="program-check" VALUE="NEQV">NEQV Maint of Status/Equivlncy</li>
-<li><input type="checkbox" class="program-check" VALUE="NESL">NESL English as a Second Lang</li>
-<li><input type="checkbox" class="program-check" VALUE="NFDS">NFDS Food Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="NFLM">NFLM Film</li>
-<li><input type="checkbox" class="program-check" VALUE="NFLN">NFLN Foreign Languages</li>
-<li><input type="checkbox" class="program-check" VALUE="NFRN">NFRN French</li>
-<li><input type="checkbox" class="program-check" VALUE="NGRM">NGRM German</li>
-<li><input type="checkbox" class="program-check" VALUE="NHIS">NHIS History</li>
-<li><input type="checkbox" class="program-check" VALUE="NHUM">NHUM Humanities (Interdisc)</li>
-<li><input type="checkbox" class="program-check" VALUE="NINT">NINT International Affairs</li>
-<li><input type="checkbox" class="program-check" VALUE="NIRP">NIRP Inst for Retired Prof</li>
-<li><input type="checkbox" class="program-check" VALUE="NITL">NITL Italian</li>
-<li><input type="checkbox" class="program-check" VALUE="NJPN">NJPN Japanese</li>
-<li><input type="checkbox" class="program-check" VALUE="NKRN">NKRN Korean</li>
-<li><input type="checkbox" class="program-check" VALUE="NLIT">NLIT Literature</li>
-<li><input type="checkbox" class="program-check" VALUE="NLTN">NLTN Latin</li>
-<li><input type="checkbox" class="program-check" VALUE="NMAT">NMAT TESOL</li>
-<li><input type="checkbox" class="program-check" VALUE="NMDM">NMDM Media Management</li>
-<li><input type="checkbox" class="program-check" VALUE="NMDS">NMDS Media Studies (Graduate)</li>
-<li><input type="checkbox" class="program-check" VALUE="NMGM">NMGM Management (Graduate)</li>
-<li><input type="checkbox" class="program-check" VALUE="NMGT">NMGT Business & Mgt</li>
-<li><input type="checkbox" class="program-check" VALUE="NMIL">NMIL Milano General Curriculum</li>
-<li><input type="checkbox" class="program-check" VALUE="NMOB">NMOB New School Mobility</li>
-<li><input type="checkbox" class="program-check" VALUE="NMUS">NMUS Music</li>
-<li><input type="checkbox" class="program-check" VALUE="NPHI">NPHI Philosophy</li>
-<li><input type="checkbox" class="program-check" VALUE="NPOL">NPOL Political Science</li>
-<li><input type="checkbox" class="program-check" VALUE="NPRT">NPRT Portuguese</li>
-<li><input type="checkbox" class="program-check" VALUE="NPSY">NPSY Psychology</li>
-<li><input type="checkbox" class="program-check" VALUE="NPUB">NPUB Public Culture</li>
-<li><input type="checkbox" class="program-check" VALUE="NPUP">NPUP Pub and Urb Policy (PhD)</li>
-<li><input type="checkbox" class="program-check" VALUE="NREL">NREL Religion</li>
-<li><input type="checkbox" class="program-check" VALUE="NRSN">NRSN Russian</li>
-<li><input type="checkbox" class="program-check" VALUE="NSBA">NSBA BA Program</li>
-<li><input type="checkbox" class="program-check" VALUE="NSLN">NSLN Sign Language</li>
-<li><input type="checkbox" class="program-check" VALUE="NSOC">NSOC Sociology</li>
-<li><input type="checkbox" class="program-check" VALUE="NSOS">NSOS Social Sciences</li>
-<li><input type="checkbox" class="program-check" VALUE="NSPN">NSPN Spanish</li>
-<li><input type="checkbox" class="program-check" VALUE="NSRW">NSRW Screenwriting</li>
-<li><input type="checkbox" class="program-check" VALUE="NTRK">NTRK Turkish</li>
-<li><input type="checkbox" class="program-check" VALUE="NURP">NURP Urban Pol Analysis & Mgmt</li>
-<li><input type="checkbox" class="program-check" VALUE="NWRG">NWRG MFA Creative Writing</li>
-<li><input type="checkbox" class="program-check" VALUE="NWRW">NWRW Writing Workshops</li>
-<li><input type="checkbox" class="program-check" VALUE="PAFM">PAFM Fashion Marketing</li>
-<li><input type="checkbox" class="program-check" VALUE="PAFS">PAFS Fashion Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PAGD">PAGD Graphic Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PAGS">PAGS General Studio</li>
-<li><input type="checkbox" class="program-check" VALUE="PAID">PAID Interior Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PCAC">PCAC Parsons Academy</li>
-<li><input type="checkbox" class="program-check" VALUE="PCDD">PCDD Digital Design CE</li>
-<li><input type="checkbox" class="program-check" VALUE="PCFA">PCFA Fine Arts</li>
-<li><input type="checkbox" class="program-check" VALUE="PCFD">PCFD Fashion Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PCGA">PCGA Graphic & Advert Des</li>
-<li><input type="checkbox" class="program-check" VALUE="PCID">PCID Interior Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PCSP">PCSP Parsons Special Programs</li>
-<li><input type="checkbox" class="program-check" VALUE="PGAR">PGAR Architecture</li>
-<li><input type="checkbox" class="program-check" VALUE="PGDM">PGDM Strategic Design & Mgmt</li>
-<li><input type="checkbox" class="program-check" VALUE="PGDS">PGDS Design Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="PGDV">PGDV Data Visualization</li>
-<li><input type="checkbox" class="program-check" VALUE="PGFA">PGFA Fine arts</li>
-<li><input type="checkbox" class="program-check" VALUE="PGFD">PGFD Fashion Design & Society</li>
-<li><input type="checkbox" class="program-check" VALUE="PGFS">PGFS Fashion Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="PGHI">PGHI History of Art and Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PGHT">PGHT Art/Design Hist & Theory</li>
-<li><input type="checkbox" class="program-check" VALUE="PGID">PGID Interior Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PGIN">PGIN Industrial Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PGLT">PGLT Lighting Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PGPH">PGPH Photography</li>
-<li><input type="checkbox" class="program-check" VALUE="PGTD">PGTD Transdisciplinary Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PGTE">PGTE Design & Tech</li>
-<li><input type="checkbox" class="program-check" VALUE="PGUD">PGUD Urban Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PLAH">PLAH History of Art and Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PLDS">PLDS Design Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="PLEN">PLEN English</li>
-<li><input type="checkbox" class="program-check" VALUE="PLFS">PLFS Fashion Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="PLHT">PLHT History Vis & Mat Culture</li>
-<li><input type="checkbox" class="program-check" VALUE="PLSD">PLSD Spatial Design Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="PLVS">PLVS Visual Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="PMOB">PMOB Parsons Mobility</li>
-<li><input type="checkbox" class="program-check" VALUE="PNSO">PNSO Spec Programs - Language</li>
-<li><input type="checkbox" class="program-check" VALUE="PSAM">PSAM Art, Media & Technology</li>
-<li><input type="checkbox" class="program-check" VALUE="PSCE">PSCE Constructed Environments</li>
-<li><input type="checkbox" class="program-check" VALUE="PSDS">PSDS Design Strategies</li>
-<li><input type="checkbox" class="program-check" VALUE="PSOF">PSOF Fashion</li>
-<li><input type="checkbox" class="program-check" VALUE="PUAD">PUAD Architectural Des</li>
-<li><input type="checkbox" class="program-check" VALUE="PUCD">PUCD Communication Des</li>
-<li><input type="checkbox" class="program-check" VALUE="PUDM">PUDM Design & Management</li>
-<li><input type="checkbox" class="program-check" VALUE="PUDT">PUDT Design & Technology</li>
-<li><input type="checkbox" class="program-check" VALUE="PUFA">PUFA Fine Arts</li>
-<li><input type="checkbox" class="program-check" VALUE="PUFD">PUFD Fashion Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PUFY">PUFY Parsons First Year</li>
-<li><input type="checkbox" class="program-check" VALUE="PUIC">PUIC Integrated Des Curric</li>
-<li><input type="checkbox" class="program-check" VALUE="PUID">PUID Interior Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PUIL">PUIL Illustration</li>
-<li><input type="checkbox" class="program-check" VALUE="PUPD">PUPD Product Design</li>
-<li><input type="checkbox" class="program-check" VALUE="PUPH">PUPH Photography</li>
-<li><input type="checkbox" class="program-check" VALUE="PUUD">PUUD Urban Design</li>
-<li><input type="checkbox" class="program-check" VALUE="RAML">RAML Lessons</li>
-<li><input type="checkbox" class="program-check" VALUE="RAPR">RAPR Performance</li>
-<li><input type="checkbox" class="program-check" VALUE="RATM">RATM Techniques of Music</li>
-<li><input type="checkbox" class="program-check" VALUE="RBEL">RBEL Electives</li>
-<li><input type="checkbox" class="program-check" VALUE="RCJN">RCJN Junior Program</li>
-<li><input type="checkbox" class="program-check" VALUE="RCPS">RCPS Pre Senior Program</li>
-<li><input type="checkbox" class="program-check" VALUE="RCPV">RCPV Prog for Very Young</li>
-<li><input type="checkbox" class="program-check" VALUE="RCSN">RCSN Senior Program</li>
-<li><input type="checkbox" class="program-check" VALUE="RCTH">RCTH Theory</li>
-<li><input type="checkbox" class="program-check" VALUE="TDRM">TDRM MFA Dramatic Arts</li>
-<li><input type="checkbox" class="program-check" VALUE="TDRU">TDRU BFA Dramatic Arts</li>
-<li><input type="checkbox" class="program-check" VALUE="UENV">UENV Environmental Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="UGLB">UGLB Global Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="ULEC">ULEC University Lectures</li>
-<li><input type="checkbox" class="program-check" VALUE="UPED">UPED Pedagogy Training</li>
-<li><input type="checkbox" class="program-check" VALUE="UTNS">UTNS University Curriculum</li>
-<li><input type="checkbox" class="program-check" VALUE="UURB">UURB Urban Studies</li>
-<li><input type="checkbox" class="program-check" VALUE="XAML">XAML Major Lessons</li>
-<li><input type="checkbox" class="program-check" VALUE="XASL">XASL Second Lessons</li>
-<li><input type="checkbox" class="program-check" VALUE="XCAH">XCAH Creative Arts and Health</li>
-<li><input type="checkbox" class="program-check" VALUE="XCMP">XCMP Comp,Scoring,Arr</li>
-<li><input type="checkbox" class="program-check" VALUE="XDRU">XDRU Extension Drama UG</li>
-<li><input type="checkbox" class="program-check" VALUE="XHSP">XHSP Historical Perf</li>
-<li><input type="checkbox" class="program-check" VALUE="XINS">XINS Instrumental</li>
-<li><input type="checkbox" class="program-check" VALUE="XJZZ">XJZZ Jazz</li>
-<li><input type="checkbox" class="program-check" VALUE="XMHS">XMHS Music History Apprec</li>
-<li><input type="checkbox" class="program-check" VALUE="XPER">XPER Perf Classes & Ensemble</li>
-<li><input type="checkbox" class="program-check" VALUE="XTEK">XTEK Music Technology</li>
-<li><input type="checkbox" class="program-check" VALUE="XTOM">XTOM Techniques of Music</li>
-<li><input type="checkbox" class="program-check" VALUE="XVCO">XVCO Voice and Opera</li>
-</ul>
-</li> -->
-
-      </ul>
       <ul class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <!-- <input type="text" class="form-control" placeholder="Search"> -->
           <span>Filter by title, program code, or description:&nbsp;</span><input id="titleOnly" class="form-control search-regex" type="text" placeholder="Search" onchange="search($('#titleOnly').val())"/>
         </div>
         <button class="btn btn-default" onclick="search()">Filter</button>
         <button class="btn btn-default" onclick="search('')">Reset</button>
-
-        <!-- <a onclick="console.log('btm')" >Reset</a> -->
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/about.html">About</a></li>
-        <!-- <li> -->
-          <!-- <a href="#sbar-toggle" class="btn btn-default" id="sbar-toggle"><i class="glyphicon glyphicon-resize-horizontal"></i></a> -->
-          <!-- <button class="btn btn-default" type="submit" onclick="toggleSidebar()"><i class="glyphicon glyphicon-resize-horizontal"></i></button> -->
-        <!-- <button class="btn btn-default" type="submit" ng-click="queryByAddress()"><i class="glyphicon glyphicon-search"></i></button> -->
-        <!-- </li> -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -348,70 +118,13 @@
   <div style="width:100%"><img src="header.png" alt="" style="width:100%; margin-bottom:5px"/></div>
   <!-- yes i got lazy -->
   <table id="main-table">
-    <!-- <tr>
-      <th>
-        Prgm
-      </th>
-      <th>
-        #
-      </th>
-      <th>
-        Title
-      </th>
-      <th>
-        Days
-      </th>
-      <th>
-        Time
-      </th>
-      <th>
-        Type
-      </th>
-      <th>
-        Instructor
-      </th>
-      <th>
-        Grad
-      </th>
-      <th>
-        U-Grad
-      </th>
-      <th>
-        Credits
-      </th>
-    </tr> -->
   </table>
-
-
-  <!-- <div id="filters">
-
-    <input id="programCode" class="search" type="text"/>Program Code
-    <input id="classNumber" class="search" type="text"/>Class Number
-
-  </div> -->
 </div>
-
-<script type="text/javascript">
-  // $( ".search" ).change(function() {
-  //   var search = $(this).val();
-  //   var column = $(this).attr("id");
-  //   filter(column, search);
-  // });
-</script>
 
 <script type="text/javascript">
 //search by text
 var found;
-// $( "#titleOnly" ).change(function(e) {
 function search(value){
-  // e.preventDefault();
-
-  // $('#preloader').show("slow", function() {
-  //   console.log("hello");
-  // });
-
-  // var search = $(this).val();
-
   var search = value;
 
   var regex = new RegExp(search, 'i');
@@ -427,31 +140,6 @@ function search(value){
   redrawTable(dataset);
   }
 }
-
-
-
-// });
-</script>
-
-<script type="text/javascript">
-  function toggle(source) {
-    checkboxes = $('.program-check');
-    for(var i=0, n=checkboxes.length;i<n;i++) {
-      checkboxes[i].checked = source.checked;
-    }
-  }
-</script>
-
-<script type="text/javascript">
-//http://stackoverflow.com/questions/590018/getting-all-selected-checkboxes-in-an-array
-  var selectedPrograms = [];
-
-  function checkCheckboxes () {
-    selectedPrograms = [];
-    $("input:checkbox[class=program-check]:checked").each(function(){
-      selectedPrograms.push($(this).val());
-    });
-  }
 </script>
 
 <script type="text/javascript">
