@@ -136,7 +136,6 @@ $(window).on('hashchange', function() {
 
 //check if permalink
 function permalink() {
-  console.log("callback")
   var url = window.location.href;
   if(url.search("#!") > -1) {
     var selectedCrn = url.split("#!")[1];
