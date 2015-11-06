@@ -9,6 +9,8 @@ dataset,
 table,
 tr;
 
+var seatsAvailable;
+
 window.onload = function() {
 d3.csv("class-merged.csv", function(error, classes) {
 
@@ -120,6 +122,11 @@ function populateSidebar(selectedCrn) {
   $("#sb-link").attr('target', '_blank');
   $("#sbar-wrap").show();
 
+  $("#sb-seats-total").text("");
+  $("#sb-seats-taken").text("");
+  $("#sb-seats-available").text("");
+  requestSeats(thisClass[0].crn)
+
   reset(thisClass[0].crn, "https://betterclassfinder.herokuapp.com/#!" + thisClass[0].crn, thisClass[0].title_text);
 }
 
@@ -152,3 +159,14 @@ $(".crn_link").click(function(e) {
   var addressValue = $(this).attr("href");
   populateSidebar(addressValue);
 });
+
+function requestSeats(reqCrn) {
+  var url = "https://seats-fetcher.herokuapp.com/request/" + reqCrn;
+  $.getJSON( url, {})
+  .done(function( data ) {
+    seatsAvailable = data;
+    $("#sb-seats-total").text(data[0]);
+    $("#sb-seats-taken").text(data[1]);
+    $("#sb-seats-available").text(data[2]);
+  });
+}
