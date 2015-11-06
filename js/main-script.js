@@ -141,7 +141,7 @@ function populateSidebar(selectedCrn) {
   // $(document).prop('title', 'b-c-f-' + thisClass[0].title_text);
   $("#sbar-wrap").show();
 
-  reset(thisClass[0].crn, "https://better-class-finder.herokuapp.com/#!" + thisClass[0].crn, thisClass[0].title_text);
+  reset(thisClass[0].crn, "https://betterclassfinder.herokuapp.com/#!" + thisClass[0].crn, thisClass[0].title_text);
 }
 
 $(window).on('hashchange', function() {
