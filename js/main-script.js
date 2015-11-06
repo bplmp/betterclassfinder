@@ -4,6 +4,8 @@ classNumber,
 programCode,
 searchField,
 crn,
+levelGrad,
+levelUndergrad,
 cc,
 dataset,
 table,
@@ -22,7 +24,8 @@ d3.csv("class-merged.csv", function(error, classes) {
   crn = cc.dimension(function(d) { return d.crn; });
   titleText = cc.dimension(function(d) { return d.title_text; });
   searchField = cc.dimension(function(d) { return d.search_field; });
-
+  levelGrad = cc.dimension(function(d) { return d.level_grad; });
+  levelUndergrad = cc.dimension(function(d) { return d.level_undergrad; });
 
   // table = d3.select('#main').append('table')
   table = d3.select('#main-table')

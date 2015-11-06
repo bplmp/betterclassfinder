@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Fri Nov 06 2015 13:36:43 GMT-0500 (EST)">
 <title>better-class-finder</title>
 <head>
   <link rel="stylesheet" href="bootstrap.min.css" />
@@ -107,12 +108,31 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="navbar-form navbar-left" role="search">
+      <form class="navbar-form navbar-left" role="search" id="formSubmit">
         <div class="form-group">
-          <span>Filter by title, program code, instructor, or description:&nbsp;</span><input id="titleOnly" class="form-control search-regex" type="text" placeholder="Search" onchange="search($('#titleOnly').val())"/>
+          <span>Filter by title, program code, instructor, or description:&nbsp;</span><input id="titleSubmit" class="form-control search-regex" type="text" placeholder="Search"/>
         </div>
-        <button class="btn btn-default" onclick="search()">Filter</button>
+        <button class="btn btn-default" onclick="search($('#titleSubmit').val())">Filter</button>
         <button class="btn btn-default" onclick="search('')">Reset</button>
+        <!-- <li class="checkbox">
+          <label><input id="undergradCheck" type="checkbox" name="undergradCheck" value="undergrad">&nbsp;Undergad&nbsp;</label>
+        </li>
+        <li class="checkbox">
+          <label><input id="gradCheck" type="checkbox" name="gradCheck" value="grad">&nbsp;Grad</label>
+        </li> -->
+        <li class="checkbox">
+          <label><input id="undergradRadio" type="radio" name="radio" value="undergrad">&nbsp;Undergrad&nbsp;</label>
+        </li>
+        <li class="checkbox">
+          <label><input id="gradRadio" type="radio" name="radio" value="grad">&nbsp;Grad&nbsp;</label>
+        </li>
+        <li class="checkbox">
+          <label><input id="allRadio" type="radio" name="radio" value="all">&nbsp;All</label>
+        </li>
+      </form>
+      <ul class="navbar-form navbar-left">
+        <!-- <button class="btn btn-default" onclick="search($('#titleSubmit').val())">Filter</button> -->
+        <!-- <button class="btn btn-default" onclick="search('')">Reset</button> -->
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/about.html">About</a></li>
@@ -155,6 +175,78 @@ function search(value){
       $('#sbar-wrap').hide();
     }
   });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('#formSubmit').submit(captureSubmit)
+});
+
+function captureSubmit(event) {
+    var frm = $(event.originalTarget);
+    $.ajax({
+        type: frm.attr('method'),
+        url: frm.attr('action'),
+        data: frm.serialize(),
+        success: function(results) {
+            // do stuff
+        },
+        error: function(result) {
+            // handle the error
+            alert(result.status + ' ' + result.statusText);
+        }
+    });
+    return false;
+}
+</script>
+
+<script type="text/javascript">
+//   //checkboxes
+//   $(document).ready(function(){
+//   $("#undergradCheck").attr("checked", true);
+//   $("#gradCheck").attr("checked", true);
+// });
+//
+// $('input[name=undergradCheck]').change(function(){
+//
+//     if($(this).is(':checked'))
+//     {
+//       filter("levelUndergrad", "U")
+//     }
+//     else
+//     {
+//       filter("levelUndergrad", "ALL")
+//     }
+// });
+// $('input[name=gradCheck]').change(function(){
+//
+//     if($(this).is(':checked'))
+//     {
+//       filter("levelGrad", "G")
+//     }
+//     else
+//     {
+//       filter("levelGrad", "ALL")
+//     }
+// });
+$('#undergradRadio').change(function(){
+  if($(this).is(':checked')){
+    filter("levelGrad", "ALL")
+    filter("levelUndergrad", "U");
+  }
+});
+$('#gradRadio').change(function(){
+  if($(this).is(':checked')){
+    filter("levelUndergrad", "ALL");
+    filter("levelGrad", "G");
+  }
+});
+$('#allRadio').change(function(){
+  if($(this).is(':checked')){
+    filter("levelUndergrad", "ALL");
+    filter("levelGrad", "ALL")
+  }
+});
 </script>
 
 <script>
