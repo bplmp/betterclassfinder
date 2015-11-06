@@ -137,7 +137,8 @@ function populateSidebar(selectedCrn) {
   $("#sb-instruct").text(thisClass[0].cs_instruct);
   $("#sb-location").text(thisClass[0].cs_where);
   $("#sb-descript").text(description);
-  $("#sb-link").attr('href', 'https://alvin.newschool.edu/prbn/bwckschd.p_disp_detail_sched?term_in=201530&crn_in=' + thisClass[0].crn)
+  $("#sb-link").attr('href', 'https://alvin.newschool.edu/prbn/bwckschd.p_disp_detail_sched?term_in=201530&crn_in=' + thisClass[0].crn);
+  $("#sb-link").attr('target', '_blank');
   // $(document).prop('title', 'b-c-f-' + thisClass[0].title_text);
   $("#sbar-wrap").show();
 
