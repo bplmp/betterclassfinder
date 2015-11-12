@@ -1,6 +1,7 @@
 # betterclassfinder
 
 This is a better class finder for the New School.
+Deployed at: http://betterclassfinder.herokuapp.com/
 
 This data was scraped from the old New School class finder: https://alvin.newschool.edu/prbn/bwckgens.p_proc_term_date
 
